@@ -1,6 +1,7 @@
-
+// https://www.npmjs.com/package/hirez.js
 const Hirez = require('./node_modules/hirez.js/hirez');
-let jsonData;
+let jsonGodsData;
+let jsonItemsData;
 
 let hirez = new Hirez({
     devId: '2867',
@@ -9,9 +10,18 @@ let hirez = new Hirez({
 
 hirez.smite('pc').session.generate().then(() => {
   hirez.smite('pc').getGods().then((res) => {
-    jsonData = JSON.stringify(res);
+    jsonGodsData = JSON.stringify(res);
     var fs = require('fs');
-    fs.writeFile("../smite-app/src/assets/godsData.json", jsonData, function(err) {
+    fs.writeFile("../smite-app/src/assets/godsData.json", jsonGodsData, function(err) {
+    if(err) {
+        return console.log(err);
+    }
+}); 
+  })
+  hirez.smite('pc').getItems().then((res) => {
+    jsonItemsData = JSON.stringify(res);
+    var fs = require('fs');
+    fs.writeFile("../smite-app/src/assets/itemsData.json", jsonItemsData, function(err) {
     if(err) {
         return console.log(err);
     }
