@@ -6,6 +6,7 @@ import { SmiteService } from './smite.service';
 import { RouterModule, Routes, Router } from '@angular/router';
 import { GodDetailComponent } from './god-detail/god-detail.component';
 import { GodListComponent } from './god-list/god-list.component';
+import { ItemListComponent } from './item-list/item-list.component';
 
 const appRoutes: Routes = [
   { path: 'gods', component: GodListComponent },
@@ -15,7 +16,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     GodDetailComponent,
-    GodListComponent
+    GodListComponent,
+    ItemListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title of the document</title>
+</head>
+
+<body>
+    <h1>Smite Gods</h1>
+    <div class="item" *ngFor="let item of items" [class.selected]="item.Name === selectedName">
+        <a [routerLink]="['/items', item.Name]" routerLinkActive="active">
+            <img class="test" src="{{item.godIcon_URL}}" alt="{{item.Name}}">
+        </a>
+        <span class="caption"> {{god.Name}} </span>
+    </div>
+    
+  
+</body>
+
+
+
+</html> 

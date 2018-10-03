@@ -418,3 +418,33 @@ export class God {
     'ret_msg': null;
 };
 }
+
+export class Item {
+    'ChildItemId': number;
+    'DeviceName': string;
+    'IconId': number;
+    'ItemDescription': {
+        'Description': string;
+        'Menuitems': [
+            {
+                'Description': string;
+                'Value': string;
+            },
+            {
+                'Description': string;
+                'Value': string;
+            }
+        ],
+        'SecondaryDescription': string;
+    };
+    'ItemId': number;
+    'ItemTier': number;
+    'Price': number;
+    'RestrictedRoles': string;
+    'RootItemId': number;
+    'ShortDesc': string;
+    'StartingItem': boolean;
+    'Type': string;
+    'itemIcon_URL': string;
+    'ret_msg': string;
+}
