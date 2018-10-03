@@ -1,0 +1,6 @@
+<div *ngIf="god$ | async as god">
+  <div class="god">
+    <img src="{{god.godCard_URL}}">
+    <span class="caption"> {{god.Name}} </span>
+  </div>
+</div>

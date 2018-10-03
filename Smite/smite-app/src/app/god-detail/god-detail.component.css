@@ -1,0 +1,14 @@
+.god {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 180px;
+}
+img {
+    width: 180px;
+    height: 334px;
+    background-color: grey;
+}
+.caption {
+    display: block;
+}
