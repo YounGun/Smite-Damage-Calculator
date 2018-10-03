@@ -1,0 +1,17 @@
+.item {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 120px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+img:hover {
+    transform: translate(0, -5px);
+  }
+.caption {
+    display: block;
+}

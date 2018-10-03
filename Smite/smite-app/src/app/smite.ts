@@ -434,7 +434,7 @@ export class Item {
                 'Description': string;
                 'Value': string;
             }
-        ],
+        ];
         'SecondaryDescription': string;
     };
     'ItemId': number;

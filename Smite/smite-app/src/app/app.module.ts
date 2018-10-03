@@ -10,7 +10,8 @@ import { ItemListComponent } from './item-list/item-list.component';
 
 const appRoutes: Routes = [
   { path: 'gods', component: GodListComponent },
-  { path: 'gods/:name', component: GodDetailComponent }
+  { path: 'gods/:name', component: GodDetailComponent },
+  { path: 'items', component: ItemListComponent },
 ];
 @NgModule({
   declarations: [
