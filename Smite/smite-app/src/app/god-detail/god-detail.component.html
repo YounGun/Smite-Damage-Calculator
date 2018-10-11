@@ -1,10 +1,10 @@
-<div *ngIf="god$ | async as god">
-  <div class="god">
-    <img src="{{god.godCard_URL}}">
-    <span class="caption"> {{god.Name}} </span>
+<div class="group" *ngIf="god$ | async as god">
+  <h1>{{god.Name}}</h1>
+  <div>
+      <img src="{{god.godCard_URL}}">
   </div>
   <div class="stats">
-      <table>
+      <table class="centerTable">
           <tr>
             <th>Attack Speed</th>
             <th>Attack Speed Per Level</th>

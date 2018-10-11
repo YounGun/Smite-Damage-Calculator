@@ -1,17 +1,25 @@
-.god {
-    display: inline-block;
-    vertical-align: top;
+.list {
     text-align: center;
+}
+.god {
+    vertical-align: top;
+    display: inline-block;
     width: 120px;
 }
+
 img {
+    border: 1px solid black;
+    border-radius: 10px;
     width: 100px;
     height: 100px;
     background-color: grey;
 }
 img:hover {
-    transform: translate(0, -5px);
+    transform: translate(5px, 0);
   }
 .caption {
     display: block;
+}
+h1 {
+    text-align: center;
 }

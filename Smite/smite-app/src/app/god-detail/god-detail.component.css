@@ -1,25 +1,27 @@
-.god {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    width: 180px;
-}
 img {
+    border: 1px solid black ;
+    float: left;
     width: 180px;
     height: 334px;
-    background-color: grey;
-}
-.caption {
-    display: block;
+    margin: 24px 24px;
+    background-color: #f4f4f4;
 }
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+table {
+    float: right;
+    margin: 24px;
+    color: #2d3142;
+}
 th, td {
     padding: 10px;
 }
 th {
-    background-color:#d62828;
+    background-color:#cca43b;
     color: white;
+}
+h1 {
+    text-align: center;
 }

@@ -5,15 +5,13 @@
 </head>
 
 <body>
-    <h1>Smite Gods</h1>
-    <div class="item" *ngFor="let item of items" [class.selected]="item.DeviceName === selectedName">
-          <img class="test" src="{{item.itemIcon_URL}}" alt="{{item.DeviceName}}">
-        <span class="caption"> {{item.DeviceName}} </span>
+    <h1>Items</h1>
+    <div class="list">
+      <div class="item" *ngFor="let item of items" [class.selected]="item.DeviceName === selectedName">
+            <img class="test" src="{{item.itemIcon_URL}}" alt="{{item.DeviceName}}">
+          <span class="caption"> {{item.DeviceName}} </span>
+      </div>
     </div>
-    
-  
 </body>
-
-
 
 </html> 
