@@ -6,12 +6,49 @@
   <div class="stats">
       <table class="centerTable">
           <tr>
-            <th>Attack Speed</th>
-            <th>Attack Speed Per Level</th>
+            <th>Stat</th>
+            <th>Value</th>
+            <th>Value Per Level</th>
           </tr>
           <tr>
-            <td> {{god.AttackSpeed}} </td>
-            <td> {{god.AttackSpeedPerLevel}} </td>
+            <td>Health</td>
+            <td>{{god.Health}}</td>
+            <td>{{god.HealthPerLevel}}</td>
+          </tr>
+          <tr>
+            <td>HP5</td>
+            <td>{{god.HealthPerFive}}</td>
+            <td>{{god.HP5PerLevel}}</td>
+          </tr>
+          <tr *ngIf="god.PhysicalPower != 0">
+            <td>Power</td>
+            <td>{{god.PhysicalPower}}</td>
+            <td>{{god.PhysicalPowerPerLevel}}</td>
+          </tr>
+          <tr *ngIf="god.MagicalPower != 0">
+            <td>Power</td>
+            <td>{{god.MagicalPower}}</td>
+            <td>{{god.MagicalPowerPerLevel}}</td>
+          </tr>
+          <tr>
+            <td>Attack Speed</td>
+            <td>{{god.AttackSpeed}}</td>
+            <td>{{god.AttackSpeedPerLevel}}</td>
+          </tr>
+          <tr>
+            <td>Physical Protection</td>
+            <td>{{god.PhysicalProtection}}</td>
+            <td>{{god.PhysicalProtectionPerLevel}}</td>
+          </tr>
+          <tr>
+            <td>Magic Protection</td>
+            <td>{{god.MagicProtection}}</td>
+            <td>{{god.MagicProtectionPerLevel}}</td>
+          </tr>
+          <tr>
+            <td>Mana</td>
+            <td>{{god.Mana}}</td>
+            <td>{{god.ManaPerLevel}}</td>
           </tr>
       </table>
   </div>

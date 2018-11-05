@@ -221,6 +221,7 @@ export class God {
     'Pros': string;
     'Roles': string;
     'Speed': number;
+    'id': number;
     'Title': string;
     'Type': string;
     'abilityDescription1': {
@@ -413,7 +414,6 @@ export class God {
     'godAbility5_URL': string;
     'godCard_URL': string;
     'godIcon_URL': string;
-    'id': number;
     'latestGod': string;
     'ret_msg': null;
 };

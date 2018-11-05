@@ -1,0 +1,25 @@
+h1 {
+    display: inline-block;
+    font-size: 30px;
+    width: 30%;
+}
+select {
+    width: 20%;
+}
+.container {
+    width: 100%;
+}
+.input {
+    width: 50%;
+    float: left;
+}   
+.output {
+    width: 50%;
+    float: right;
+    font-size: 24px;
+    text-align: center;
+}
+button {
+    margin: 24px;
+    padding: 24px 48px;
+}

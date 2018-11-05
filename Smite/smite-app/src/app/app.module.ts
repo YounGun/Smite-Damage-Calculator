@@ -7,21 +7,26 @@ import { RouterModule, Routes, Router } from '@angular/router';
 import { GodDetailComponent } from './god-detail/god-detail.component';
 import { GodListComponent } from './god-list/god-list.component';
 import { ItemListComponent } from './item-list/item-list.component';
+import { DamageCalculatorComponent } from './damage-calculator/damage-calculator.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'gods', component: GodListComponent },
   { path: 'gods/:name', component: GodDetailComponent },
   { path: 'items', component: ItemListComponent },
+  { path: 'damage', component: DamageCalculatorComponent },
 ];
 @NgModule({
   declarations: [
     AppComponent,
     GodDetailComponent,
     GodListComponent,
-    ItemListComponent
+    ItemListComponent,
+    DamageCalculatorComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
